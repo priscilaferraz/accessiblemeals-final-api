@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/cliente/
+
+###
+GET http://localhost:8080/api/cliente/1
+
+###
+DELETE http://localhost:8080/api/restaurante/5
+
+###
+
+POST http://localhost:8080/api/cliente
+Content-Type: application/json
+
+{
+    "name":"Marcus Souza",
+    "cpf": "23.987.765-98",
+    "email":"marcus@fiap.com.br",
+    "password":"127",
+    "endereco": "Av. teste, 54"
+}
+
+###
+
+PUT http://localhost:8080/api/cliente/1
+Content-Type: application/json
+
+{
+    "name":"Amanda Souza",
+    "email":"amanda@fiap.com.br",
+    "password":"128"
+}
